@@ -1,30 +1,3 @@
-// -------------------------------------------------------------
-// Publish and Subscribe with photoresistors or phototransistors
-/* -------------------------------------------------------------
-
-Go find a buddy who also has a Particle device.
-Each of you will pick a unique event name
-   (make it weird so that no one else will have it)
-   (no more that 63 ASCII characters, and no spaces)
-
-In the following code, replace "your_unique_event_name" with your chosen name.
-Replace "buddy_unique_event_name" with your buddy's chosen name.
-
-Have your buddy do the same on his or her IDE.
-
-Then, each of you should flash the code to your device.
-
-Breaking the beam on one device will turn on the D7 LED on the second device.
-
-But how does this magic work? Through the miracle of publish and subscribe.
-
-We are going to Particle.publish a public event to the cloud.
-That means that everyone can see you event and anyone can subscribe to it.
-You and your buddy will both publish an event, and listen for each others events.
-
-------------------------------------------*/
-
-
 int led = D6;
 int boardLed = D7;
 int photosensor = A0;
