@@ -100,7 +100,7 @@ void loop() {
     else {
         if (beamBroken==false) {
             // Same deal as before...
-            Particle.publish("","broken");
+            Particle.publish("Deakin_RIOT_SIT210_Photon_Buddy","broken");
             beamBroken=true;
         }
     }
