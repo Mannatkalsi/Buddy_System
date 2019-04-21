@@ -114,7 +114,7 @@ void loop() {
     // This loop sends a publish when the beam is broken.
     if (analogRead(photosensor)>beamThreshold) {
         if (beamBroken==true) {
-            Particle.publish("your_unique_event_name","intact");
+            Particle.publish("Deakin_RIOT_SIT210_Photon_Buddy","intact");
             // publish this public event
             // rename your_unique_event_name with your actual unique event name. No spaces, 63 ASCII characters.
             // give your event name to your buddy and have them put it in their app.
@@ -127,7 +127,7 @@ void loop() {
     else {
         if (beamBroken==false) {
             // Same deal as before...
-            Particle.publish("your_unique_event_name","broken");
+            Particle.publish("","broken");
             beamBroken=true;
         }
     }
